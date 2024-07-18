@@ -1,0 +1,191 @@
+body {
+    margin: 0;
+    font-family: Times New Roman;
+    justify-content: center;
+    align-items: center;  
+}
+header {
+    background-color: #ffffff;
+    color: #6affcb;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    z-index: 99;
+    position: relative;
+    opacity: 0.7;
+}
+.container1 {
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    padding: 0 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.gallery {
+    
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.gallery img {
+    position: relative;
+    border-radius: 10px;
+    justify-content: center;
+    display: block;
+    margin: 5px;
+    overflow: hidden;
+    width: calc(100% - 100px); 
+    height: auto;
+    opacity: 1;
+    transition: transform 0.5s ease;
+}
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #6af5ff;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    z-index: 1;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Transformasi untuk efek visual seperti buku terbuka */
+.gallery img.previous {
+    transform: translateX(-100%) rotateY(-15deg); /* Bergerak ke kiri dan memutar sedikit ke atas */
+}
+
+.gallery img.next {
+    transform: translateX(100%) rotateY(15deg); /* Bergerak ke kanan dan memutar sedikit ke bawah */
+}
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #555;
+}
+
+.nav-link:active {
+    background-color: #777;
+}
+.navbot{
+    padding:0;
+}
+
+.hidden {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+.kado 
+{   
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      width: 50px;
+      height: 50px;
+      z-index:0;
+    }
+.kado img{
+    top:1000px; 
+    width: 150px;
+    height: 150px;
+}
+    #gift-box {
+      position: relative; 
+      cursor: pointer;
+      left:150px;
+      top:100px;
+      }
+#gift-box::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-left: 100px solid transparent;
+      border-right: 100px solid transparent;
+      border-top: 60px solid transparent;
+      bottom: -60px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      justify-content: center;
+      align-items: center;
+    } 
+typing-animation {
+    animation: typing 3s steps(30, end);
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid;
+    margin: 0 auto;
+    display: inline-block;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;}
+  .saran-box {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .saran-box textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    resize: none;
+  }
+
+  .saran-box button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .stk{
+      width: 50px;
+      height: 50px;
+  }
