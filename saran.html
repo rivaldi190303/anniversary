@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hasil</title>
+</head>
+<body>
+  <h2>Hasil</h2>
+  <div id="hasilSaran"></div>
+  <script>
+    // Mengambil data dari localStorage
+    var saran = JSON.parse(localStorage.getItem('saran'));
+
+    // Menampilkan data di laman hasil.html
+    if (saran && saran.length > 0) {
+      var hasilsaran= document.getElementById('hasilSaran');
+      for (var i = 0; i < saran.length; i++) {
+        var saranItem = saran[i];
+        hasilSaran.innerHTML += `
+          <p><strong>Saran:</strong> ${saranItem.saran}</p>
+          <hr>
+        `;
+      }
+    } else {
+      document.getElementById('hasilSaran').innerText = 'Tidak ada saran yang tersimpan.';
+    }
+  </script>
+</body>
+</html>
