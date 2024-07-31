@@ -6,13 +6,13 @@ body {
 }
 header {
     background-color: #ffffff;
-    color: #6affcb;
+    color: #6af5ff;
     padding: 20px;
     text-align: center;
     border-radius: 5px;
     z-index: 99;
     position: relative;
-    opacity: 0.7;
+    
 }
 .container1 {
     margin: auto;
@@ -67,6 +67,7 @@ header {
     padding: 10px;
     font-size: 18px;
     z-index: 1;
+    cursor: pointer;
 }
 
 .prev {
@@ -88,6 +89,7 @@ header {
 .navbar {
     position: fixed;
     width: 100%;
+    left: 0;
     background-color: #333;
     padding: 10px 0;
     display: flex;
@@ -137,17 +139,20 @@ header {
       width: 50px;
       height: 50px;
       z-index:0;
+      cursor: pointer;
     }
 .kado img{
     top:1000px; 
     width: 150px;
     height: 150px;
+    cursor: pointer;
 }
     #gift-box {
       position: relative; 
       cursor: pointer;
       left:150px;
       top:100px;
+      cursor: pointer;
       }
 #gift-box::after {
       content: "";
