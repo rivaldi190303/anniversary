@@ -85,6 +85,15 @@ header {
 .gallery img.next {
     transform: translateX(100%) rotateY(15deg); /* Bergerak ke kanan dan memutar sedikit ke bawah */
 }
+.navbar {
+    position: fixed;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
 .bottom-nav {
     position: fixed;
     bottom: 0;
