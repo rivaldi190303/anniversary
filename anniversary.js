@@ -109,6 +109,6 @@ function kirimSaran() {
       // Menambahkan data baru ke array
       existingSaran.push(saran);
       localStorage.setItem('saran', JSON.stringify(existingSaran));
-      alert('I LOVE YOU FOREVER LAURA, Even you're not💕');
+      alert('I LOVE YOU FOREVER LAURA💕');
     }
     ;
