@@ -70,11 +70,11 @@ header {
 }
 
 .prev {
-    left: 10px;
+    left: 150px;
 }
 
 .next {
-    right: 10px;
+    right: 150px;
 }
 
 /* Transformasi untuk efek visual seperti buku terbuka */
