@@ -58,7 +58,7 @@ header {
 .prev, .next {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+   
     background-color: #6af5ff;
     color: white;
     border: none;
@@ -71,11 +71,11 @@ header {
 }
 
 .prev {
-    left: 150px;
+    left: 20px;
 }
 
 .next {
-    right: 150px;
+    right: 20px;
 }
 
 /* Transformasi untuk efek visual seperti buku terbuka */
